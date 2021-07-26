@@ -1,6 +1,4 @@
-MultiPong - A multiplayer pong game (and its my birthday today :D)
-
-Hey guys! Today is my birthday (wow the same month as @CodingCactus, @Coder100, and @PixiGem), and I made a multiplayer pong game where you can either play against another person online or against the computer! Here are the features:
+Hey guys! I made a multiplayer pong game where you can either play against another person online or against the computer! Here are the features:
 
 - See your opponent's moves
 - Play against the computer
