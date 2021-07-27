@@ -5,7 +5,6 @@ const {v4:uuid} = require("uuid");
 const io = require("socket.io")(server);
 
 const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser')
 const Database = require("@replit/database");
 const session = require('express-session');
 const db = new Database();
@@ -15,7 +14,6 @@ const users = {};
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.use(express.static("public"));
-app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({secret: process.env["secret"]}));
 
