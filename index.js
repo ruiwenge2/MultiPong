@@ -106,6 +106,7 @@ app.get("/play", (req, res) => {
     return;
   }
   res.render("game/playagainstcomputer.html", {loggedIn:true, user:f.getUser(req)});
+  console.log("playing against computer");
 });
 
 app.get("/game/:room", (req, res) => {
