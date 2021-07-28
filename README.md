@@ -11,4 +11,6 @@ To test it out, you can join the same room in different windows, or in different
 Here's a demo:
 ![demo image](https://multipong.ruiwenge2.repl.co/img/demo.gif)
 
+*Note: To create an account you must open the website in a new tab.*
+
 ## Enjoy!
