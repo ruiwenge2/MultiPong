@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MultiPong</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="icon" href="/img/favicon.png">
+    <style>
+      body {
+        background:rgb(6, 28, 51);
+      }
+      nav {
+        left:-300px;
+      }
+      .main-content {
+        width:100%;
+      }
+      #canvas {
+        border:2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <%- include("/home/runner/MultiPong/views/nav.html") %>
+      <audio id="pong_sound"><source src="/sounds/hit.mp3"></audio>
+      <div class="main-content">
+        <h1>MultiPong</h1>
+        <p>Use the up and down arrow keys to move your paddle.</p>
+        <canvas id="canvas"></canvas>
+        <div id="scores">
+          <h1>Scores:</h1>
+          <h3 id="first"><%= otheruser %>: <span id="firstscore"></span></h3>
+          <h3 id="second"><%= user %> (You): <span id="secondscore"></span></h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      const room = "<%= room %>";
+      const otheruser = "<%= otheruser %>";
+    </script>
+    <script src="/js/player2.js"></script>
+  </body>
+</html>
