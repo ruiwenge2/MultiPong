@@ -14,3 +14,5 @@ Here's a demo:
 *Note: To create an account you must open the website in a new tab.*
 
 ## Enjoy!
+
+![Repl Talk Badge](https://replit-badge.vercel.app/api?id=143432)](https://replit.com/talk/share/MultiPong-A-multiplayer-pong-game-and-its-my-birthday-today-D/143432)
