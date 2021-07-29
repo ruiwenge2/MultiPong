@@ -15,4 +15,4 @@ Here's a demo:
 
 ## Enjoy!
 
-![Repl Talk Badge](https://replit-badge.vercel.app/api?id=143432)](https://replit.com/talk/share/MultiPong-A-multiplayer-pong-game-and-its-my-birthday-today-D/143432)
+[![Repl Talk Badge](https://replit-badge.vercel.app/api?id=143432)](https://replit.com/talk/share/MultiPong-A-multiplayer-pong-game-and-its-my-birthday-today-D/143432)
