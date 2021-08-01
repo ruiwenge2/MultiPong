@@ -42,6 +42,7 @@ socket.on("leave", username => {
 });
 
 document.addEventListener("keydown", e => {
+  e.preventDefault();
 	if(e.key == "ArrowDown"){
 		down = true;
     socket.emit("movedown", room);
