@@ -27,6 +27,7 @@ if(Math.random() > 0.5){
 startGame();
 
 document.addEventListener("keydown", e => {
+  e.preventDefault();
 	if(e.key == "ArrowDown"){
 		down = true;
 	}
