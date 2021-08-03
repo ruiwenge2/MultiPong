@@ -23,6 +23,7 @@ nav {
   padding:0;
   width:300px;
   background:rgb(28, 71, 117);
+  overflow:auto;
 }
 nav a, nav a:visited {
   display:block;
