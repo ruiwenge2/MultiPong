@@ -97,7 +97,7 @@ app.get("/join", (req, res) => {
 });
 
 app.get("/howtoplay", (req, res) => {
-  res.render("howtoplay.html", {loggedIn:f.loggedIn(req), user:f.getUser(req)})
+  res.render("howtoplay.html", {loggedIn:f.loggedIn(req), user:f.getUser(req)});
 });
 
 app.get("/play", (req, res) => {
@@ -106,7 +106,7 @@ app.get("/play", (req, res) => {
     return;
   }
   res.render("game/playagainstcomputer.html", {loggedIn:true, user:f.getUser(req)});
-  console.log("playing against computer");
+  console.log(f.getUser(req) + " is playing against the computer");
 });
 
 app.get("/game/:room", (req, res) => {
@@ -140,7 +140,7 @@ app.get("/logout", (req, res) => {
 });
 
 app.get("/*", (req, res) => {
-  res.status(404).render("error.html", {loggedIn:f.loggedIn(req), user:f.getUser(req), title:"Page Not Found", content:`<h1>Error 404</h1><h2>Page Not Found</h2><img src="/img/robot.jpeg" width="400px"><br><br><a href="/" style="color:white; font-size:20px">Go to home</a>`});
+  res.status(404).render("error.html", {loggedIn:f.loggedIn(req), user:f.getUser(req), title:"Page Not Found", content:`<h1>Error 404</h1><h2>Page Not Found</h2><img src="/img/robot.jpeg" width="400px" style="border:none"><br><br><a href="/" style="color:white; font-size:20px">Go to home</a>`});
 });
 
 io.on("connection", socket => {
